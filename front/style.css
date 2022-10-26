@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Inconsolata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: rgba(0, 0, 0, 0.92);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.header-image {
+    height: 60px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 60px;
+}
+
+.header-menu-item {
+    font-family: 'Inconsolata', monospace;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.header-menu-item:hover {
+    color: #F41E1E;
+}
+
+.main {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-content-written {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-left: 460px;
+    margin-right: 300px;
+    gap: 48px;
+}
+
+.main-content-written-title {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.main-content-written-paragraph {
+    font-family: 'Inconsolata', monospace;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.main-content-written-button {
+    background-color: rgba(238, 148, 64, 0.93);
+    width: 230px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(197, 197, 197, 0.18);
+    border-radius: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.main-content-image {
+    height: 430px;
+    margin-right: 530px;
+}
+
+
+.secondary-content-written {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.secondary-content-table-title {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.secondary-content-table-data-image {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 309px;
+    height: 218px;  
+    background: url(gkgraphix-53-_174u4UWLAI-unsplash.jpg);
+    box-shadow: 4px 5px 4px rgba(197, 197, 197, 0.18);
+    border-radius: 109px;
+}
+
+.secondary-content-table-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px;
+}
+
+.secondary-content-table-data {
+    font-family: 'Inconsolata', monospace;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* .footer {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+} */
+
+.footer-image-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.footer-image {
+    max-width: 80px;
+    min-width: 20px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;
+}
+
+.footer-title {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.footer-link {
+    font-family: 'Inconsolata', monospace;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer-link:hover {
+    color: #F41E1E;
+}
