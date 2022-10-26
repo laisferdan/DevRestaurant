@@ -75,7 +75,7 @@ body {
     font-size: 24px;
 }
 
-.main-content-written-button {
+.main-content-button {
     background-color: rgba(238, 148, 64, 0.93);
     width: 230px;
     height: 60px;
@@ -86,6 +86,11 @@ body {
     font-weight: 400;
     font-size: 24px;
     color: #FFFFFF;
+}
+
+.main-content-button:hover {
+    background-color: rgba(207, 109, 17, 0.758);
+    cursor: pointer;
 }
 
 .main-content-image {
