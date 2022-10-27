@@ -7,9 +7,10 @@
     text-decoration: none;
 }
 
-body {
+.body {
     font-size: 100%;
     background: rgba(0, 0, 0, 0.92);
+    color: #FFFFFF;
 }
 
 .header {
@@ -33,7 +34,7 @@ body {
     font-family: 'Inconsolata', monospace;
     color: #FFFFFF;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .header-menu-item:hover {
@@ -61,30 +62,33 @@ body {
     gap: 48px;
 }
 
-.main-content-written-title {
+.main-content-title {
     font-family: 'Anonymous Pro', monospace;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 48px;
     color: #FFFFFF;
 }
 
-.main-content-written-paragraph {
+.main-content-paragraph {
     font-family: 'Inconsolata', monospace;
     color: #FFFFFF;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .main-content-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(238, 148, 64, 0.93);
-    width: 230px;
+    width: 180px;
     height: 60px;
     border: none;
     box-shadow: 4px 5px 4px rgba(197, 197, 197, 0.18);
     border-radius: 20px;
     font-family: 'Inconsolata', monospace;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     color: #FFFFFF;
 }
 
@@ -112,7 +116,7 @@ body {
     padding-top: 48px;
     font-family: 'Anonymous Pro', monospace;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 38px;
     color: #FFFFFF;
     margin-bottom: 50px;
 }
@@ -129,6 +133,7 @@ body {
 .secondary-content-written {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     padding: 12px;
     gap: 320px;
 }
