@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>DEV Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+          crossorigin="anonymous">
+</head>
+<body class="body">
+    <header class="py-3 ms-5 ps-5">
+        <nav class="navbar navbar-expand navbar-dark header-menu-item">
+            <div class="container">
+                <a class="navbar-brand" href="home-page.html">
+                    <img src="images/hamburger-logo.png" alt="Logo do DEV Restaurant" class="img-fluid float-start">
+                </a>
+            </div>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-page.html" target="_self">P�gina Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="menu.html" target="_self">Card�pio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="suggestions.html" target="_self">Sugest�es</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#developers">Desenvolvedoras</a>
+                        </li>
+                </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="py-3 ms-5 ps-5 clearfix my-5 ">
+            <div class="row justify-content-evenly">
+                <div class="col pe-5">
+                    <h1 class="main-content-title pb-3">DEV Restaurant</h1>
+                </div>
+            </div>
+        </section>
+        <section class="teste">
+            <article>
+                <form action=""
+                      method="POST">
+                    <div><p>
+                        <label for="name"> Nome: </label>
+                        <input class="input-dotted"
+                               id="name"
+                               type="text"
+                               name="nome"
+                               placeholder="Digite o seu nome" />
+                        </p>
+                    </div>
+                    <div><p>
+                        <label for="mail"> E-mail: </label>
+                        <input class="input-dotted"
+                               id="mail"
+                               type="email"
+                               name="email"
+                               placeholder="seuemail@provedor.com" />
+                        </p>
+                    </div>
+                    <div><p>
+                        <label for="phone"> Telefone: </label>
+                        <input class="input-dotted"
+                               id="phone"
+                               type="tel"
+                               name="phone"
+                               </p>
+                    </div>
+                    <div><p>
+                        <label for="product"> Escolha o servi�o: </label>
+                        <select multiple class="input-dotted whitecollorbox">
+                            id="product"
+                            name="product"
+                            <option value="hamburguer">Hamburguer</option>
+                            <option value="drinks">Bebidas</option>
+                            <option value="site">Site</option>
+                            <option value="other">Outro</option>
+                        </select>
+                        </p>
+
+                    </div>
+                    <div><p>
+                        <label for="suggestion"> Sugest�o: </label><br>
+                        <input class="input-dotted suggestioninput"
+                               id="suggestion"
+                               type="text"
+                               name="suggestion" />
+                        </p>
+
+                    </div>
+
+                    <button type="reset" class="main-content-button main-content-button-suggestion"> Resetar Dados </button>
+                    <button type="submit" class="main-content-button main-content-button-suggestion"> Enviar sugest�o </button>
+
+
+                </form>
+                </article>
+
+            <article class="main-content-title">
+                    <p> <h1>Obrigada por compartilhar sua sugest�o conosco! :)</h1></p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="py-3 ms-5 ps-5">
+        <div>
+            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
+            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
+            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
+            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
+            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
+            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
+            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
+        </div>
+        <div id="developers" class="footer-text">
+            <h3>Desenvolvedoras</h3>
+            <a href="https://www.linkedin.com/in/boen-j/">Ana Boen</a>
+            <a href="https://www.linkedin.com/in/isabella-laporte-santos/">Isabella Laporte Santos</a>
+            <a href="https://www.linkedin.com/in/laisfd/">La�s Fernandes Daniel</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous">
+    </script>
+</body>
+</html>
