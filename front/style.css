@@ -189,3 +189,46 @@
 .footer-link:hover {
     color: #F41E1E;
 }
+
+.teste{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    flex-basis:50%,50%;
+    flex-grow:1,1;
+    flex-shrink:1,1;
+    align-items: center;
+    gap: 100px;
+    justify-content:space-evenly;
+
+}
+
+.input-dotted {
+    border-style: dotted;
+    border-width: 2px;
+    font-family: 'Anonymous Pro';
+    border-color: #FFFFFF;
+    height: 30px;
+    width: 220px;
+    background-color: black;
+    border-radius: 5px;
+    text-align:center
+}
+
+.whitecollorbox {
+    color: white;
+    width: 150px;
+    height: 22px;
+}
+
+.suggestioninput {
+    width: 300px;
+    height: 200px
+}
+.main-content-button-suggestion {
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 15px;
+    align-items: flex-start;
+}
