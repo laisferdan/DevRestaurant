@@ -38,4 +38,22 @@
   .hero-img {
     width: 60%;
   }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
 }
