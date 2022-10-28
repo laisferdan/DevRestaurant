@@ -1,0 +1,41 @@
+@media (max-width: 799px) {
+  html {
+    font-size: 50%;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+    background-color: #1c1d1f;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .main-nav-list {
+    right: 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+}

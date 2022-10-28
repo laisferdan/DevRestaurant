@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Inconsolata&display=swap");
+
+/**************************/
+/******** GENERAL ********/
+/************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  background-color: #1c1d1f;
+  overflow-x: hidden;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #1c1d1f;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  color: #fff;
+  background-color: #cf711f;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/**************************/
+/******** HEADER *********/
+/************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 6rem;
+  position: relative;
+  background-color: #1c1d1f;
+}
+
+.logo {
+  height: 6rem;
+}
+
+/**************************/
+/****** NAVIGATION *******/
+/************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #cf711f;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+.current-page {
+  text-decoration: underline;
+}
+
+.open-menu,
+.close-menu {
+  position: absolute;
+  cursor: pointer;
+  font-size: 2.75rem;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 6rem;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 6rem;
+  right: 6rem;
+}
+
+/***************************************************/
+/********************** MAIN **********************/
+/*************************************************/
+
+/**************************/
+/***** HERO SECTION ******/
+/************************/
+
+.section-hero {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 80%;
+}
+
+/**************************/
+/* MEALS SECTION */
+/**************************/
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.all-meals {
+  text-align: center;
+  font-size: 1.8rem;
+}
