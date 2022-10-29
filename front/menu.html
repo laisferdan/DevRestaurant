@@ -1,81 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>DEV Restaurant</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DEV Restaurant</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/queries.css" />
+        <link
           rel="stylesheet"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-          crossorigin="anonymous">
-</head>
-<body class="body">
-    <header class="py-3 ms-5 ps-5">
-        <nav class="navbar navbar-expand navbar-dark header-menu-item">
-            <div class="container">
-                <a class="navbar-brand" href="home-page.html">
-                    <img src="images/hamburger-logo.png" alt="Logo do DEV Restaurant" class="img-fluid float-start">
-                </a>
-            </div>
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="home-page.html" target="_self">P�gina Inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="menu.html" target="_self">Card�pio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="suggestions.html" target="_self" rel="next">Sugest�es</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#developers">Desenvolvedoras</a>
-                        </li>
-                </div>
-        </nav>
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+    </head>
+  
+    <body>
+    <header class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          alt="DEV Restaurant logo"
+          src="images/hamburger-logo.png"
+        />
+      </a>
+
+      <nav class="main-nav">
+        <input type="checkbox" id="check" />
+        <ul class="main-nav-list">
+          <li>
+            <a
+              class="current-page main-nav-link"
+              aria-current="page"
+              href="index.html"
+              target="_self"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="menu.html" target="_self" rel="next"
+              >Cardápio</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-nav-link"
+              href="suggestions.html"
+              target="_self"
+              rel="next"
+              >Sugestões</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-nav-link"
+              href="developers.html"
+              target="_self"
+              rel="next"
+              >Desenvolvedoras</a
+            >
+          </li>
+          <label for="check" class="close-menu"
+            ><i class="fas fa-times"></i
+          ></label>
+        </ul>
+
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </nav>
     </header>
 
-    <main class="main">
-        <section class="py-3 ms-5 ps-5 clearfix my-5 ">
-            <div class="row justify-content-evenly">
-                <div class="col pe-5">
-                    <h1 class="main-content-title pb-3">DEV Restaurant</h1>
-                 </div>
+    <main>
+        <section class="section-hero">
+            <div class="container-menu">
+                <h1 class="heading-primary">DEV Restaurant</h1>
+                <div class="hero-text-box center-text">
+                    <div class=" grid grid--4-cols margin-bottom-md">
+                        <div class="menu">
+                          <img
+                            src="images/hamburguer-most-ordered.jpeg"
+                            class="menu-img"
+                            alt="Foto do hamburguer de picanha chamado de FullStack"
+                          />
+                          <div class="menu-content">
+                            <p class="menu-title">FullStack Burguer</p>
+                            <ul class="menu-attributes">
+                              <li class="menu-attribute">
+                                <span>Aqui temos um front e back end em perfeita sincronia. Nesse maravilhoso lanche temos 200g de hamburguer de picanha com muito molho especial, alface, tomate, bacon e muuuito cheedar. Provando ser lindo por fora e assemelhando a "clean code" por dentro.</span>
+                                <li class="menu-attribute">R$34,00</li>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="menu">
+                            <img
+                              src="images/hamburguer-vegan.jpeg"
+                              class="menu-img"
+                              alt="Foto do hamburguer vegetariano chamado de ponto e vírgula"
+                            />
+                            <div class="menu-content">
+                              <p class="menu-title">PontoEVirgula</p>
+                              <ul class="menu-attributes">
+                                <li class="menu-attribute">
+                                  <span>Como ; não pode deixar de atender nossos queridos dev's veganos. O lanche conta com um incrível hamburguer de soja artesanal, alface, tomate, queijo vegano de batata e maionese vegana. Tudo feito artesanalmente por nós, garantindo todo a qualidade de nossos ingredientes e processos.</span>
+                                  <li class="menu-attribute">R$34,00</li>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+
+                        <div class="menu">
+                            <img
+                              src="images/combo.jpg"
+                              class="menu-img"
+                              alt="Foto de um hamburguer e de uma batata frita"
+                            />
+                            <div class="menu-content">
+                              <p class="menu-title">Adicionais</p>
+                              <ul class="menu-attributes">
+                                <li class="menu-attribute">
+                                    <ul class="menu-attributes">
+                                        <li class="menu-attribute">Batata frita.....R$10,00</li>
+                                        <li class="menu-attribute">Cebola roxa.....R$3,00</li>
+                                        <li class="menu-attribute">Cebola empanada.....R$5,00</li>
+                                        <li class="menu-attribute">Extra queijo.....R$5,00</li>
+                                        <li class="menu-attribute">Picles.....R$3,00</li>
+                                        <li class="menu-attribute">Pão com gergelim.....R$3,00</li>
+                                    </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        <div class="menu">
+                            <img
+                            src="images/beverage-most-ordered.jpeg"
+                            class="menu-img"
+                            alt="Foto do energético chamado de Made To Code"
+                          />
+                            <div class="menu-content">
+                              <p class="menu-title">Bebidas</p>
+                              <ul class="menu-attributes">
+                                <li class="menu-attribute">
+                                    <ul class="menu-attributes">
+                                        <li class="menu-attribute">Made To Code.....R$10,00</li>
+                                        <li class="menu-attribute">Coca-Cola.....R$7,00</li>
+                                    </ul>
+                                </li>
+                                <img
+                            src="images/dessert-most-ordered.jpeg"
+                            class="menu-img"
+                            alt="Foto do petit gâteu chamado de Bolinho Futurista"
+                          />
+                            <div class="menu-content">
+                              <p class="menu-title">Sobremesas</p>
+                              <ul class="menu-attributes">
+                                <li class="menu-attribute">
+                                    <ul class="menu-attributes">
+                                        <li class="menu-attribute">Bolinho Futurista.....R$12,00</li>
+                                        <li class="menu-attribute">Brigadeiro.....R$4,00</li>
+                                    </ul>
+                                </li>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </section>
-
-        <section class="py-3 clearfix my-5 secondary-content">
-        </section>
-    </main>
-
-    <footer class="py-3 ms-5 ps-5">
-        <div>
-            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
-            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
-            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
-            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
-            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
-            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
-            <img src="images/little-hamburguer.png" alt="Foto de um pequeno hamburguer">
-        </div>
-        <div id="developers" class="footer-text">
-            <h3>Desenvolvedoras</h3>
-            <a href="https://www.linkedin.com/in/boen-j/">Ana Boen</a>
-            <a href="https://www.linkedin.com/in/isabella-laporte-santos/">Isabella Laporte Santos</a>
-            <a href="https://www.linkedin.com/in/laisfd/">La�s Fernandes Daniel</a>
+      
+    <footer class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="index.html" class="footer-logo">
+              <img class="logo" alt="DEV Restaurant logo" src="images/hamburger-logo.png" />
+            </a>
+  
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+  
+            <p class="copyright">
+              Copyright &copy; 2077 by DevRestaurant, Inc. Todos os direitos não são reservados.
+            </p>
+          </div>
+  
+          <div class="address-col">
+            <p class="footer-heading">Contato</p>
+            <address class="contacts">
+              <p class="address">
+               Casa da Ada Lovelace, 3º andar, Caroxinha, UÓ 5222
+              </p>
+              <p>
+                <a class="footer-link" href="tel:415-201-6370">(99) 3324-8786</a
+                ><br />
+                <a class="footer-link" href="mailto:opadev@devrestaurant.com"
+                  >opadev@devrestaurant.com</a
+                >
+              </p>
+            </address>
+          </div>
+  
+          <nav class="nav-col">
+            <p class="footer-heading">Empresa</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="developers.html">Sobre o Dev Restaurant</a></li>
+            </ul>
+          </nav>
+  
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-            crossorigin="anonymous">
-    </script>
 </body>
 </html>
