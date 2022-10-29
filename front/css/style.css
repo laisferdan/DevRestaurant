@@ -344,6 +344,7 @@ body {
 }
 
 .footer-heading {
+  color: #cf711f;
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 4rem;
@@ -376,5 +377,5 @@ body {
 
 .footer-link:hover,
 .footer-link:active {
-  color: #555;
+  color: #cf711f;
 }
