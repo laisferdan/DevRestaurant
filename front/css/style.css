@@ -321,7 +321,6 @@ body {
 /******** MENU ***********/
 /************************/
 .menu {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
@@ -362,13 +361,29 @@ body {
 
 .menu-img {
   width: 100%;
-  max-height: 280px;
+  max-height: 200px;
 }
 
 .container-menu {
   max-width: 150rem;
   padding: 0 6rem;
   margin: 0 auto;
+}
+
+.menu-price {
+  color: #e67e22;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 8px 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 5px 5px;
 }
 
 /**************************/

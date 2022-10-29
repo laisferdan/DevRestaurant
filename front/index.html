@@ -1,231 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEV Restaurant</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="index.html">
-        <img
-          class="logo"
-          alt="DEV Restaurant logo"
-          src="images/hamburger-logo.png"
-        />
-      </a>
 
-      <nav class="main-nav">
-        <input type="checkbox" id="check" />
-        <ul class="main-nav-list">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEV Restaurant</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html">
+      <img class="logo" alt="DEV Restaurant logo" src="images/hamburger-logo.png" />
+    </a>
+
+    <nav class="main-nav">
+      <input type="checkbox" id="check" />
+      <ul class="main-nav-list">
+        <li>
+          <a class="current-page main-nav-link" aria-current="page" href="index.html" target="_self">Home</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="menu.html" target="_self" rel="next">Cardápio</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="suggestions.html" target="_self" rel="next">Sugestões</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="developers.html" target="_self" rel="next">Desenvolvedoras</a>
+        </li>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </ul>
+
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </nav>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">DEV Restaurant</h1>
+          <p class="hero-description">
+            Huumm... Bateu a fome no meio da madrugada e você ainda não
+            descobriu o erro no seu código? Não se preocupe! Aqui funcionamos
+            até às 07h da manhã justamente para atender todos os Devs
+            noturnos. Após se deliciar com nosso cardápio, você estará pronto
+            para achar a ";" faltante. Além disso, em nossas avaliações,
+            encorajamos a vocês a contarem do erro e como solucionaram após o
+            rango. Prove e code :)
+          </p>
+          <a href="menu.html" class="btn btn--outline">Acessar cardápio &rarr;</a>
+        </div>
+        <div class="hero-img-box">
+          <img src="images/hamburger-front-page.png" class="hero-img" alt="Foto do logo do DEV Restaurant" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-meals">
+      <div class="container center-text">
+        <span class="subheading">Refeições</span>
+        <h2 class="heading-secondary">Os mais pedidos:</h2>
+      </div>
+
+      <div class="container grid grid--3-cols margin-bottom-md">
+        <div class="meal">
+          <img src="images/hamburguer-most-ordered.jpeg" class="meal-img"
+            alt="Foto do hamburguer mais pedido chamado de FullStack" />
+          <div class="meal-content">
+            <p class="meal-title">FullStack Burguer</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.9</strong> estrelas (537)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="meal">
+          <img src="images/beverage-most-ordered.jpeg" class="meal-img"
+            alt="Foto do energético mais pedido chamado de Made To Code" />
+          <div class="meal-content">
+            <p class="meal-title">Made to Code</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.95</strong> estrelas (699)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="meal">
+          <img src="images/dessert-most-ordered.jpeg" class="meal-img"
+            alt="Foto do petit gâteu mais vendido chamado de Bolinho Futurista" />
+          <div class="meal-content">
+            <p class="meal-title">Bolinho Futurista</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>5.0</strong> estrelas (666)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </ul>
+      </div>
+      </div>
+      </div>
+
+      <div class="container all-meals">
+        <a href="menu.html" class="link">Cardápio completo &rarr;</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container grid grid--footer">
+      <div class="logo-col">
+        <a href="index.html" class="footer-logo">
+          <img class="logo" alt="Foto do logo do DEV Restaurant" src="images/hamburger-logo.png" />
+        </a>
+
+        <ul class="social-links">
           <li>
-            <a
-              class="current-page main-nav-link"
-              aria-current="page"
-              href="index.html"
-              target="_self"
-              >Home</a
-            >
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </a>
           </li>
           <li>
-            <a class="main-nav-link" href="menu.html" target="_self" rel="next"
-              >Cardápio</a
-            >
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+            </a>
           </li>
           <li>
-            <a
-              class="main-nav-link"
-              href="suggestions.html"
-              target="_self"
-              rel="next"
-              >Sugestões</a
-            >
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            </a>
           </li>
-          <li>
-            <a
-              class="main-nav-link"
-              href="developers.html"
-              target="_self"
-              rel="next"
-              >Desenvolvedoras</a
-            >
-          </li>
-          <label for="check" class="close-menu"
-            ><i class="fas fa-times"></i
-          ></label>
         </ul>
 
-        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        <p class="copyright">
+          Copyright &copy; 2077 by DevRestaurant, Inc. Todos os direitos não são reservados.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Contato</p>
+        <address class="contacts">
+          <p class="address">
+            Casa da Ada Lovelace, 3º andar, Caroxinha, UÓ 5222
+          </p>
+          <p>
+            <a class="footer-link" href="tel:415-201-6370">(99) 3324-8786</a><br />
+            <a class="footer-link" href="mailto:opadev@devrestaurant.com">opadev@devrestaurant.com</a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Empresa</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="developers.html">Sobre o Dev Restaurant</a></li>
+        </ul>
       </nav>
-    </header>
-    <main>
-      <section class="section-hero">
-        <div class="hero">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">DEV Restaurant</h1>
-            <p class="hero-description">
-              Huumm... Bateu a fome no meio da madrugada e você ainda não
-              descobriu o erro no seu código? Não se preocupe! Aqui funcionamos
-              até às 07h da manhã justamente para atender todos os Devs
-              noturnos. Após se deliciar com nosso cardápio, você estará pronto
-              para achar a ";" faltante. Além disso, em nossas avaliações,
-              encorajamos a vocês a contarem do erro e como solucionaram após o
-              rango. Prove e code :)
-            </p>
-            <a href="menu.html" class="btn btn--outline"
-              >Acessar cardápio &rarr;</a
-            >
-          </div>
-          <div class="hero-img-box">
-            <img
-              src="images/hamburger-front-page.png"
-              class="hero-img"
-              alt="Foto do logo do DEV Restaurant"
-            />
-          </div>
-        </div>
-      </section>
 
-      <section class="section-meals">
-        <div class="container center-text">
-          <span class="subheading">Refeições</span>
-          <h2 class="heading-secondary">Os mais pedidos:</h2>
-        </div>
+    </div>
+  </footer>
+</body>
 
-        <div class="container grid grid--3-cols margin-bottom-md">
-          <div class="meal">
-            <img
-              src="images/hamburguer-most-ordered.jpeg"
-              class="meal-img"
-              alt="Foto do hamburguer mais pedido chamado de FullStack"
-            />
-            <div class="meal-content">
-              <p class="meal-title">FullStack Burguer</p>
-              <ul class="meal-attributes">
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-                  <span><strong>4.9</strong> estrelas (537)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="meal">
-            <img
-              src="images/beverage-most-ordered.jpeg"
-              class="meal-img"
-              alt="Foto do energético mais pedido chamado de Made To Code"
-            />
-            <div class="meal-content">
-              <p class="meal-title">Made to Code</p>
-              <ul class="meal-attributes">
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-                  <span><strong>4.95</strong> estrelas (699)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="meal">
-            <img
-              src="images/dessert-most-ordered.jpeg"
-              class="meal-img"
-              alt="Foto do petit gâteu mais vendido chamado de Bolinho Futurista"
-            />
-            <div class="meal-content">
-              <p class="meal-title">Bolinho Futurista</p>
-              <ul class="meal-attributes">
-                <li class="meal-attribute">
-                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-                  <span><strong>5.0</strong> estrelas (666)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="container all-meals">
-          <a href="menu.html" class="link">Cardápio completo &rarr;</a>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-        <div class="container grid grid--footer">
-          <div class="logo-col">
-            <a href="index.html" class="footer-logo">
-              <img class="logo" alt="Foto do logo do DEV Restaurant" src="images/hamburger-logo.png" />
-            </a>
-  
-            <ul class="social-links">
-              <li>
-                <a class="footer-link" href="#"
-                  ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a class="footer-link" href="#"
-                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a class="footer-link" href="#"
-                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
-                ></a>
-              </li>
-            </ul>
-  
-            <p class="copyright">
-              Copyright &copy; 2077 by DevRestaurant, Inc. Todos os direitos não são reservados.
-            </p>
-          </div>
-  
-          <div class="address-col">
-            <p class="footer-heading">Contato</p>
-            <address class="contacts">
-              <p class="address">
-               Casa da Ada Lovelace, 3º andar, Caroxinha, UÓ 5222
-              </p>
-              <p>
-                <a class="footer-link" href="tel:415-201-6370">(99) 3324-8786</a
-                ><br />
-                <a class="footer-link" href="mailto:opadev@devrestaurant.com"
-                  >opadev@devrestaurant.com</a
-                >
-              </p>
-            </address>
-          </div>
-  
-          <nav class="nav-col">
-            <p class="footer-heading">Empresa</p>
-            <ul class="footer-nav">
-              <li><a class="footer-link" href="developers.html">Sobre o Dev Restaurant</a></li>
-            </ul>
-          </nav>
-  
-        </div>
-      </footer>
-  </body>
 </html>
