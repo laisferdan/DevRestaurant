@@ -324,6 +324,7 @@ body {
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
+
 }
 
 .menu:hover {
@@ -344,19 +345,20 @@ body {
 }
 
 .menu-attributes {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+
 }
 
 .menu-attribute {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
 }
 
 .menu-img {
@@ -365,9 +367,9 @@ body {
 }
 
 .container-menu {
-  max-width: 150rem;
-  padding: 0 6rem;
-  margin: 0 auto;
+    max-width: 150rem;
+    padding: 0 6rem;
+    margin: 0 auto;
 }
 
 .menu-price {
@@ -385,6 +387,139 @@ body {
   text-align: center;
   padding: 5px 5px;
 }
+
+
+/**************************/
+/****** Suggestion********/
+/************************/
+.suggestion-main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.suggestion-form {
+    background-color: black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 580px;
+    padding: 20px;
+    width: 320px;
+}
+
+.suggestion-title {
+    color: #eee;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.suggestion-subtitle {
+    color: #eee;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.suggestion-input-container {
+    height: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.suggestion-input-container-larger {
+    height: 120px;
+    position: relative;
+    width: 100%;
+}
+
+.suggestion-ic1 {
+    margin-top: 30px;
+}
+
+.suggestion-ic2 {
+    margin-top: 20px;
+}
+
+.suggestion-input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 15px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 5px;
+    width: 100%;
+}
+
+
+.suggestion-cut {
+    background-color: black;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+
+.suggestion-cut-short {
+    width: 50px;
+}
+
+.suggestion-input:focus ~ .suggestion-cut,
+.suggestion-input:not(:placeholder-shown) ~ .suggestion-cut {
+    transform: translateY(8px);
+}
+
+.suggestion-placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 15px;
+}
+
+.suggestion-input:focus ~ .suggestion-placeholder,
+.suggestion-input:not(:placeholder-shown) ~ .suggestion-placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.suggestion-input:not(:placeholder-shown) ~ .suggestion-placeholder {
+    color: #808097;
+}
+
+.suggestion-input:focus ~ .suggestion-placeholder {
+    color: #dc2f55;
+}
+
+.suggestion-submit {
+    background-color: #F41E1E;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    height: 35px;
+    margin-top: 20px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+.suggestion-submit:active {
+        background-color: #06b;
+}
+
 
 /**************************/
 /******** FOOTER *********/
