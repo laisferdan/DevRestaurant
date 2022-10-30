@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\front"
+    "\\front",
+    "\\front\\css"
   ],
-  "SelectedNode": "\\front\\suggestions.html",
+  "SelectedNode": "\\front\\menu.html",
   "PreviewInSolutionExplorer": false
 }
