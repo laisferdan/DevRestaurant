@@ -316,7 +316,6 @@ body {
   text-align: center;
 }
 
-
 /**************************/
 /******** MENU ***********/
 /************************/
@@ -324,7 +323,6 @@ body {
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
-
 }
 
 .menu:hover {
@@ -345,20 +343,19 @@ body {
 }
 
 .menu-attributes {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
 }
 
 .menu-attribute {
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.6rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
 }
 
 .menu-img {
@@ -367,9 +364,9 @@ body {
 }
 
 .container-menu {
-    max-width: 150rem;
-    padding: 0 6rem;
-    margin: 0 auto;
+  max-width: 150rem;
+  padding: 0 6rem;
+  margin: 0 auto;
 }
 
 .menu-price {
@@ -586,6 +583,7 @@ body {
 
 .address {
   margin-bottom: 2.4rem;
+  color: #fff;
 }
 
 .footer-nav {
