@@ -398,34 +398,59 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     height: 100vh;
+=======
+    height: 70vh;
+    margin-top: 120px;
+    margin-bottom: 120px;
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
 }
 
 .suggestion-form {
     background-color: black;
     border-radius: 20px;
     box-sizing: border-box;
+<<<<<<< HEAD
     height: 580px;
     padding: 20px;
     width: 320px;
+=======
+    height: 610px;
+    padding: 20px;
+    width: 700px;
+
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
 }
 
 .suggestion-title {
     color: #eee;
+<<<<<<< HEAD
     font-size: 20px;
+=======
+    font-size: 30px;
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
     font-weight: 600;
     margin-top: 30px;
 }
 
 .suggestion-subtitle {
     color: #eee;
+<<<<<<< HEAD
     font-size: 16px;
+=======
+    font-size: 20px;
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
     font-weight: 600;
     margin-top: 15px;
 }
 
 .suggestion-input-container {
+<<<<<<< HEAD
     height: 40px;
+=======
+    height: 50px;
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
     position: relative;
     width: 100%;
 }
@@ -442,6 +467,10 @@ body {
 
 .suggestion-ic2 {
     margin-top: 20px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
 }
 
 .suggestion-input {
@@ -450,10 +479,17 @@ body {
     border: 0;
     box-sizing: border-box;
     color: #eee;
+<<<<<<< HEAD
     font-size: 15px;
     height: 100%;
     outline: 0;
     padding: 4px 20px 5px;
+=======
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 15px 20px 5px;
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
     width: 100%;
 }
 
@@ -467,11 +503,23 @@ body {
     top: -20px;
     transform: translateY(0);
     transition: transform 200ms;
+<<<<<<< HEAD
     width: 76px;
 }
 
 .suggestion-cut-short {
     width: 50px;
+=======
+    width: 110px;
+}
+
+.suggestion-cut-medium {
+  width: 77px;
+}
+
+.suggestion-cut-short {
+    width: 56px;
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
 }
 
 .suggestion-input:focus ~ .suggestion-cut,
@@ -489,6 +537,10 @@ body {
     transform-origin: 0 50%;
     transition: transform 200ms, color 200ms;
     top: 15px;
+<<<<<<< HEAD
+=======
+    font-size: 18px;
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
 }
 
 .suggestion-input:focus ~ .suggestion-placeholder,
@@ -501,28 +553,48 @@ body {
 }
 
 .suggestion-input:focus ~ .suggestion-placeholder {
+<<<<<<< HEAD
     color: #dc2f55;
 }
 
 .suggestion-submit {
     background-color: #F41E1E;
+=======
+    color: #e67e22;
+}
+
+.suggestion-submit {
+    background-color: #e67e22;
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
     color: #eee;
     cursor: pointer;
+<<<<<<< HEAD
     font-size: 16px;
+=======
+    font-size: 20px;
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
     height: 35px;
     margin-top: 20px;
     outline: 0;
     text-align: center;
     width: 100%;
 }
+<<<<<<< HEAD
 .suggestion-submit:active {
         background-color: #06b;
 }
 
 
+=======
+
+.suggestion-submit:active {
+  background-color: #06b;
+}
+
+>>>>>>> fcddbcd25239c06670c4bc5034a47fb631ec6a08
 /**************************/
 /******** FOOTER *********/
 /************************/
