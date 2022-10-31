@@ -1,3 +1,9 @@
+@media (max-width: 1200px){
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 799px) {
   html {
     font-size: 50%;
@@ -35,7 +41,7 @@
     text-align: center;
   }
 
-  .hero-img {
+  .hero-img .menu-img {
     width: 60%;
   }
 
@@ -44,6 +50,10 @@
   }
 
   .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -70,5 +80,13 @@
 
   .grid--3-cols {
     grid-template-columns: 1fr;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-img {
+    width: 60%;
   }
 }
