@@ -316,7 +316,6 @@ body {
   text-align: center;
 }
 
-
 /**************************/
 /******** MENU ***********/
 /************************/
@@ -359,6 +358,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
+    flex-direction: column;
 }
 
 .menu-img {
@@ -370,6 +370,8 @@ body {
     max-width: 150rem;
     padding: 0 6rem;
     margin: 0 auto;
+    flex-direction: column;
+    display: flex
 }
 
 .menu-price {
@@ -577,6 +579,7 @@ body {
 
 .address {
   margin-bottom: 2.4rem;
+  color: #fff;
 }
 
 .footer-nav {
