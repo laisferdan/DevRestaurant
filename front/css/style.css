@@ -396,34 +396,37 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 70vh;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 .suggestion-form {
     background-color: black;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 580px;
+    height: 610px;
     padding: 20px;
-    width: 320px;
+    width: 700px;
+
 }
 
 .suggestion-title {
     color: #eee;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     margin-top: 30px;
 }
 
 .suggestion-subtitle {
     color: #eee;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     margin-top: 15px;
 }
 
 .suggestion-input-container {
-    height: 40px;
+    height: 50px;
     position: relative;
     width: 100%;
 }
@@ -440,6 +443,7 @@ body {
 
 .suggestion-ic2 {
     margin-top: 20px;
+
 }
 
 .suggestion-input {
@@ -448,10 +452,10 @@ body {
     border: 0;
     box-sizing: border-box;
     color: #eee;
-    font-size: 15px;
+    font-size: 18px;
     height: 100%;
     outline: 0;
-    padding: 4px 20px 5px;
+    padding: 15px 20px 5px;
     width: 100%;
 }
 
@@ -465,11 +469,15 @@ body {
     top: -20px;
     transform: translateY(0);
     transition: transform 200ms;
-    width: 76px;
+    width: 110px;
+}
+
+.suggestion-cut-medium {
+  width: 77px;
 }
 
 .suggestion-cut-short {
-    width: 50px;
+    width: 56px;
 }
 
 .suggestion-input:focus ~ .suggestion-cut,
@@ -487,6 +495,7 @@ body {
     transform-origin: 0 50%;
     transition: transform 200ms, color 200ms;
     top: 15px;
+    font-size: 18px;
 }
 
 .suggestion-input:focus ~ .suggestion-placeholder,
@@ -499,27 +508,27 @@ body {
 }
 
 .suggestion-input:focus ~ .suggestion-placeholder {
-    color: #dc2f55;
+    color: #e67e22;
 }
 
 .suggestion-submit {
-    background-color: #F41E1E;
+    background-color: #e67e22;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
     color: #eee;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     height: 35px;
     margin-top: 20px;
     outline: 0;
     text-align: center;
     width: 100%;
 }
-.suggestion-submit:active {
-        background-color: #06b;
-}
 
+.suggestion-submit:active {
+  background-color: #06b;
+}
 
 /**************************/
 /******** FOOTER *********/
